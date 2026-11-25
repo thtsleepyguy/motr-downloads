@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="Download the official MOTR Android beta. Plan private motorcycle rides, share your location by choice, and track your rides with GPS. Built for riders in Pakistan.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MOTR — Built for the ride.">
+  <meta property="og:description" content="Private group rides, GPS and rider discovery. Get the official Android beta.">
+  <meta property="og:image" content="assets/karakoram.webp">
+  <link rel="icon" href="assets/icon.png">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/release.js" defer></script>
+  <script>
+    window.va = window.va || function () {
+      (window.vaq = window.vaq || []).push(arguments);
+    };
+    window.va('beforeSend', function (event) {
+      if (event.type !== 'pageview') return null;
+      var url = new URL(event.url, location.origin);
+      if (url.origin !== location.origin || url.pathname !== '/') return null;
+      if (document.referrer) {
+        var referrer = new URL(document.referrer);
+        if (referrer.origin === location.origin && referrer.pathname.indexOf('/iphone') === 0) return null;
+      }
+      event.url = url.origin + '/';
+      return event;
+    });
+  </script>
+  <script src="/_vercel/insights/script.js" defer></script>
+  <title>MOTR — Built for the ride.</title>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="masthead shell">
+    <a class="wordmark" href="#content" aria-label="MOTR home">MOTR<span>.</span></a>
+    <nav aria-label="Main">
+      <a href="#features">The app</a>
+      <a href="#guide">How to use it</a>
+      <a class="nav-download" href="#download">Download</a>
+    </nav>
+  </header>
+  <main id="content">
+    <section class="hero shell" aria-labelledby="title">
+      <div class="hero-intro">
+        <p class="eyebrow">Motorcycle rides · Pakistan</p>
+        <h1 id="title">Built for<br>the ride<span>.</span></h1>
+        <p class="hero-deck">Plan the meetup. Keep your group together. Track the ride with GPS.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://github.com/thtsleepyguy/motr-downloads/releases/latest/download/MOTR.apk">Download for Android</a>
+          <a class="inline-link" href="iphone/">Open on iPhone</a>
+          <a class="inline-link" href="#guide">Watch the guide</a>
+        </div>
+        <p class="spec" data-release-spec>Free Android beta · Android 7.0+</p>
+      </div>
+      <figure class="hero-image">
+        <img src="assets/karakoram.webp" width="1774" height="887" alt="Illustrated group of motorcyclists rounding a mountain road above a river valley" fetchpriority="high">
+      </figure>
+    </section>
+    <section id="features" class="features shell" aria-labelledby="features-title">
+      <div class="section-lead">
+        <p class="eyebrow">The app</p>
+        <h2 id="features-title">Plans change.<br>Stay together.</h2>
+      </div>
+      <dl class="feature-list">
+        <div><dt>Private rides</dt><dd>Share an invite, chat with the group, and pin the meetup time, place, and ride rules.</dd></div>
+        <div><dt>Your location, your choice</dt><dd>Share your live position with ride members, or opt in to approximate discovery within 5 km.</dd></div>
+        <div><dt>GPS and ride history</dt><dd>See ground speed on the map and review distance, time, and speed after the ride.</dd></div>
+        <div><dt>Make it yours</dt><dd>Keep a motorcycle in your Garage, customize your rider profile, and bring your own MP3s.</dd></div>
+      </dl>
+    </section>
+    <section id="guide" class="guide shell" aria-labelledby="guide-title">
+      <div class="guide-copy">
+        <p class="eyebrow">Quick start</p>
+        <h2 id="guide-title">Ready before<br>you roll.</h2>
+        <p>Follow a real phone recording through GPS, private rides, chats, your garage, and settings. The guide runs for 1 minute 37 seconds.</p>
+        <a class="inline-link" href="#download">Get the Android beta</a>
+      </div>
+      <div class="video-frame">
+        <video src="assets/tutorial.mp4" poster="assets/tutorial-poster.jpg" width="1080" height="1920" controls playsinline preload="none" aria-label="MOTR Android tutorial with on-screen instructions"></video>
+      </div>
+    </section>
+    <section id="download" class="download shell" aria-labelledby="download-title">
+      <div class="download-panel">
+        <div>
+          <p class="eyebrow">Official Android download</p>
+          <h2 id="download-title">Get MOTR.</h2>
+          <p data-release-spec>Free Android beta · Android 7.0+</p>
+          <div class="download-actions">
+            <a class="btn btn-primary" href="https://github.com/thtsleepyguy/motr-downloads/releases/latest/download/MOTR.apk">Download APK</a>
+            <a class="inline-link" href="iphone/">Open on iPhone</a>
+            <a class="inline-link" data-release-notes href="https://github.com/thtsleepyguy/motr-downloads/releases">Release notes</a>
+          </div>
+        </div>
+        <div class="install">
+          <h3>Install or update</h3>
+          <ol>
+            <li>On your Android phone, download and open the APK.</li>
+            <li>If Android asks, allow your browser or Files app to install this download.</li>
+            <li>Choose <strong>Install</strong> or <strong>Update</strong>. Existing betas signed with the same certificate can update in place.</li>
+          </ol>
+          <p>Come back to this page for future updates. Beta feedback is available in your MOTR profile.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer shell">
+    <a class="wordmark" href="#content" aria-label="MOTR home">MOTR<span>.</span></a>
+    <p>Made for riders in Pakistan.</p>
+    <a class="inline-link" href="https://wajdanali.vercel.app/projects/motr">Meet the maker</a>
+  </footer>
+</body>
+</html>
