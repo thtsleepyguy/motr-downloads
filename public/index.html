@@ -13,6 +13,23 @@
   <link rel="icon" href="assets/icon.png">
   <link rel="stylesheet" href="assets/styles.css">
   <script src="assets/release.js" defer></script>
+  <script>
+    window.va = window.va || function () {
+      (window.vaq = window.vaq || []).push(arguments);
+    };
+    window.va('beforeSend', function (event) {
+      if (event.type !== 'pageview') return null;
+      var url = new URL(event.url, location.origin);
+      if (url.origin !== location.origin || url.pathname !== '/') return null;
+      if (document.referrer) {
+        var referrer = new URL(document.referrer);
+        if (referrer.origin === location.origin && referrer.pathname.indexOf('/iphone') === 0) return null;
+      }
+      event.url = url.origin + '/';
+      return event;
+    });
+  </script>
+  <script src="/_vercel/insights/script.js" defer></script>
   <title>MOTR — Built for the ride.</title>
 </head>
 <body>
